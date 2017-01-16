@@ -1,0 +1,14 @@
+{
+  "name": "angular-portfolio",
+  "homepage": "https://github.com/valeri879/AngularPortfolio",
+  "authors": [
+    "valeri879 <valeri.kharitonashvili1@gmail.com>"
+  ],
+  "description": "my personal portfolio using angular2",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "front-end-file-structures": "*"
+  }
+}
