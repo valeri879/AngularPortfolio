@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Component} from 'ng2-page-slider';
 
 export class Navigaton {
   id : number;
@@ -6,10 +7,10 @@ export class Navigaton {
 }
 
 const NAVIGATION: Navigaton[] = [
-  { id: 11, menu: 'ვალერი' },
-  { id: 12, menu: 'კოტე' },
-  { id: 13, menu: 'გიგა' },
-  { id: 14, menu: 'ლეონი' }
+  { id: 11, menu: 'Main' },
+  { id: 12, menu: 'About' },
+  { id: 13, menu: 'Portfolio' },
+  { id: 14, menu: 'Contact' }
 ];
 
 @Component({
@@ -17,9 +18,6 @@ const NAVIGATION: Navigaton[] = [
   templateUrl: '../templates/navigation.html'
 })
 export class AppComponent {
-  title = 'app works! bitches';
-
-  name = 'გიგა როგორ ხარ ?';
-
   nav = NAVIGATION;
 }
+

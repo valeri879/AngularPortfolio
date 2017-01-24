@@ -1,14 +1,17 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        {{name}}
-      </a>
-
-      <ul class="navbar-nav">
-          <a *ngFor="let x of nav" href="#">{{x.menu}} </a>
-      </ul>
-
+<nav class="navbar navbar-inverse navbar-default">
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <a class="navbar-brand" href="#">
+                Logo
+            </a>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav navbar-nav nav-pills pull-right">
+                <li *ngFor="let x of nav; let i=index" class="" (click)="isClicked=i" [class.active]="isClicked==i">
+                    <a href="#">{{x.menu}}</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
+{{menu}}
